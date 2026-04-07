@@ -1,11 +1,17 @@
 console.log("Script started");
-
+let currentSize = 50;
 //Start the game
 function start(){
     createSquare(50, "light pink");
-    createSquare(80, "light blue");
-    createSquare(75, "light purple");
+    createSquare(60, "light blue");
+    createSquare(70, "light purple");
     console.log(Math.random() * 1000);
+}
+
+function updateTimer(){
+    let timer = document.getElementById("Timer");
+    timeLeft = timeLeft -1;
+    timer.innerText = timeLeft + ""
 }
 
 //Create a square 
@@ -44,6 +50,11 @@ function getRandomY(){
 //Handle the player clicking a square
 function handleClick(event){
     let square = event.target;
-    console.log(square);
+    console.log(.square.style.width.);
+    id (square.style.width == currentSize +  "px");
+    console.log("first square");    
+    square.remove();
+    currentSize = currentSize + 18;
     //Make a size pattern 
+
 }
